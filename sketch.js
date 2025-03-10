@@ -19,7 +19,7 @@ function setup() {
   dropdown.option('選項');
   dropdown.option('淡江大學');
   dropdown.option('教科系');
-  dropdown.option('筆記');
+  dropdown.option('測驗卷');
   dropdown.changed(goToLink);
   
   textFont('Arial'); // 設置字體為 Arial
@@ -56,12 +56,12 @@ function toggleShake() {
 
 function goToLink() {
   let selected = dropdown.value();
-  if (selected === '第一周') {
+  if (selected === '淡江大學') {
     window.location.href = 'https://www.tku.edu.tw';
-  } else if (selected === '第二周') {
+  } else if (selected === '教科系') {
     window.location.href = 'https://www.et.tku.edu.tw';
-  } else if (selected === '第三周') {
-    window.location.href = 'https://hackmd.io/@HSGKLoDOSMSkfc8lYd7CKw/SyXuQtMsye';
+  } else if (selected === '測驗卷') {
+    window.location.href = 'https://mj1119-c.github.io/20250310/';
   }
 }
 
