@@ -57,11 +57,11 @@ function toggleShake() {
 function goToLink() {
   let selected = dropdown.value();
   if (selected === '淡江大學') {
-    window.location.href = 'https://www.tku.edu.tw';
+    iframe.attribute ('src' , 'https://www.tku.edu.tw');
   } else if (selected === '教科系') {
-    window.location.href = 'https://www.et.tku.edu.tw';
+    iframe.attribute ('src' , 'https://www.et.tku.edu.tw');
   } else if (selected === '測驗卷') {
-    window.location.href = 'https://mj1119-c.github.io/20250310/';
+     iframe.attribute ('src' , 'https://mj1119-c.github.io/20250310/');
   }
 }
 
