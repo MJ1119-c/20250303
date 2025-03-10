@@ -56,14 +56,15 @@ function toggleShake() {
 
 function goToLink() {
   let selected = dropdown.value();
-  if (selected === '淡江大學') {
-    iframe.attribute ('src' , 'https://www.tku.edu.tw');
-  } else if (selected === '教科系') {
-    iframe.attribute ('src' , 'https://www.et.tku.edu.tw');
-  } else if (selected === '測驗卷') {
-     iframe.attribute ('src' , 'https://mj1119-c.github.io/20250310/');
+  if (selected === '第一周') {
+    window.location.href = 'https://www.tku.edu.tw';
+  } else if (selected === '第二周') {
+    window.location.href = 'https://www.et.tku.edu.tw';
+  } else if (selected === '第三周') {
+    window.location.href = 'https://mj1119-c.github.io/20250310/';
   }
 }
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
