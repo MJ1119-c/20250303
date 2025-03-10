@@ -19,7 +19,7 @@ function setup() {
   dropdown.option('選項');
   dropdown.option('淡江大學');
   dropdown.option('教科系');
-  dropdown.option('筆記');
+  dropdown.option('測驗卷');
   dropdown.changed(goToLink);
   
   textFont('Arial'); // 設置字體為 Arial
@@ -61,7 +61,7 @@ function goToLink() {
   } else if (selected === '第二周') {
     window.location.href = 'https://www.et.tku.edu.tw';
   } else if (selected === '第三周') {
-    window.location.href = 'https://hackmd.io/@HSGKLoDOSMSkfc8lYd7CKw/SyXuQtMsye';
+    window.location.href = 'https://mj1119-c.github.io/20250310/';
   }
 }
 
